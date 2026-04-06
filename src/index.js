@@ -12,6 +12,10 @@ const {
     FileBuilder,
     SeparatorBuilder,
     SeparatorSpacingSize,
+    UserSelectMenuBuilder,
+    ContainerBuilder,
+    SelectMenuBuilder,
+    User,
 
 } = require("discord.js");
 const client = new Client(
@@ -130,6 +134,41 @@ client.on(Events.MessageCreate, async (message) => {
         //     components: [exampleTextDisplay, exampleSeparator, exampleTextDisplay],
         //     flags: MessageFlags.IsComponentsV2,
         // });
+
+
+        // СТВОРЕННЯ CONTAINER
+        // const exampleContainer = new ContainerBuilder()
+        //     .setAccentColor(0x0099ff)
+        //     .addTextDisplayComponents((textDisplay) => 
+        //         textDisplay.setContent(
+        //             'Hello my friend'
+        //         ),
+        //     )
+        //     .addActionRowComponents((actionRow) => 
+        //         actionRow.setComponents(
+        //             new UserSelectMenuBuilder().setCustomId('exampleSelect').setPlaceholder('Select users')
+        //         ),
+        //     )
+        //     .addSeparatorComponents((separator) => separator)
+        //     .addSectionComponents((section) =>
+        //         section
+        //             .addTextDisplayComponents(
+        //                 (textDisplay) =>
+        //                     textDisplay.setContent(
+        //                         'This text is inside a Text Display component! You can use **any __markdown__** available inside this component too.',
+        //                     ),
+        //                 (textDisplay) => textDisplay.setContent('And you can place one button or one thumbnail component next to it!'),
+        //             )
+        //             .setButtonAccessory((button) =>
+        //                 button.setCustomId('exampleButton').setLabel('Button inside a Section').setStyle(ButtonStyle.Primary),
+        //             ),
+        //     );
+
+        // await message.channel.send({
+        //     components: [exampleContainer],
+        //     flags: MessageFlags.IsComponentsV2,
+        // });
+
     }
 });
 
