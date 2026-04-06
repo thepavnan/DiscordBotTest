@@ -118,18 +118,18 @@ client.on(Events.MessageCreate, async (message) => {
         //     flags: MessageFlags.IsComponentsV2,
         // });
 
-        const exampleTextDisplay = new TextDisplayBuilder().setContent('Hello my fr');
 
-        const exampleSeparator = new SeparatorBuilder()
-            .setDivider(false)
-            .setSpacing(SeparatorSpacingSize.Large
+        // СТВОРЕННЯ SEPARATOR
+        // const exampleTextDisplay = new TextDisplayBuilder().setContent('Hello my fr');
 
-        );
+        // const exampleSeparator = new SeparatorBuilder()
+        //     .setDivider(true)
+        //     .setSpacing(SeparatorSpacingSize.Large);
 
-        await message.channel.send({
-            components: [exampleTextDisplay, exampleSeparator, exampleTextDisplay],
-            flags: MessageFlags.IsComponentsV2,
-        });
+        // await message.channel.send({
+        //     components: [exampleTextDisplay, exampleSeparator, exampleTextDisplay],
+        //     flags: MessageFlags.IsComponentsV2,
+        // });
     }
 });
 
